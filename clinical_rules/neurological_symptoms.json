@@ -1,0 +1,127 @@
+{
+  "complaint": "neurological_symptoms",
+  "title": "Acute Neurological Deficit & Stroke Screening",
+  "description": "Evidence-based triage for acute focal deficits, transient ischemic attacks, and seizures.",
+  "important_information": [
+    "sudden_weakness",
+    "facial_droop",
+    "arm_drift",
+    "speech_difficulty",
+    "vision_loss",
+    "seizure_activity",
+    "confusion",
+    "time_last_known_well"
+  ],
+  "risk_rules": [
+    {
+      "id": "RULE_NEURO_STROKE_FAST_EMERGENCY",
+      "name": "Acute Stroke / FAST Positive Pattern",
+      "risk_level": "EMERGENCY",
+      "requires_doctor_review": true,
+      "recommended_action": "emergency",
+      "reason": "Sudden onset of facial asymmetry, unilateral limb weakness/numbness, or speech slurring/aphasia (FAST positive). Requires immediate time-critical stroke activation.",
+      "conditions_required": {
+        "has_neuro_symptoms": true,
+        "any_fast_symptom": ["facial_droop", "arm_weakness", "leg_weakness", "slurred_speech", "aphasia"]
+      },
+      "possible_concern": "Acute ischemic stroke or intracranial hemorrhage",
+      "confidence": "high"
+    },
+    {
+      "id": "RULE_NEURO_SEIZURE_EMERGENCY",
+      "name": "Active or Prolonged Seizure Activity",
+      "risk_level": "EMERGENCY",
+      "requires_doctor_review": true,
+      "recommended_action": "emergency",
+      "reason": "Ongoing convulsive activity, post-ictal unresponsiveness, or first-onset seizure with head trauma.",
+      "conditions_required": {
+        "has_neuro_symptoms": true,
+        "active_seizure_or_unresponsive": true
+      },
+      "possible_concern": "Status epilepticus or acute structural brain injury",
+      "confidence": "high"
+    },
+    {
+      "id": "RULE_NEURO_TIA_HIGH",
+      "name": "Transient Ischemic Attack (Resolved Deficit)",
+      "risk_level": "HIGH",
+      "requires_doctor_review": true,
+      "recommended_action": "urgent_medical_evaluation",
+      "reason": "Sudden focal neurological deficit that has temporarily resolved. Carries an extremely high short-term risk of completed stroke.",
+      "conditions_required": {
+        "has_neuro_symptoms": true,
+        "transient_episode_resolved": true
+      },
+      "possible_concern": "Transient Ischemic Attack (TIA)",
+      "confidence": "high"
+    },
+    {
+      "id": "RULE_NEURO_CHRONIC_PARESTHESIA_MODERATE",
+      "name": "Gradual Peripheral Sensory Symptoms",
+      "risk_level": "MODERATE",
+      "requires_doctor_review": true,
+      "recommended_action": "medical_review",
+      "reason": "Gradual-onset bilateral stocking-glove numbness, tingling, or tremor without acute focal motor loss or cranial nerve dysfunction.",
+      "conditions_required": {
+        "has_neuro_symptoms": true,
+        "gradual_sensory_only": true
+      },
+      "possible_concern": "Peripheral neuropathy / Radiculopathy",
+      "confidence": "moderate"
+    },
+    {
+      "id": "RULE_NEURO_BENIGN_VERTIGO_LOW",
+      "name": "Positional Vertigo without Central Flags",
+      "risk_level": "LOW",
+      "requires_doctor_review": false,
+      "recommended_action": "self_care_routine",
+      "reason": "Brief seconds-long spinning sensation triggered exclusively by head movement, with normal gait and absence of diplopia, dysarthria, or weakness.",
+      "conditions_required": {
+        "has_neuro_symptoms": true,
+        "benign_positional_only": true
+      },
+      "possible_concern": "Benign Paroxysmal Positional Vertigo (BPPV)",
+      "confidence": "moderate"
+    }
+  ],
+  "possible_conditions": [
+    {
+      "name": "Acute cerebrovascular accident (Stroke)",
+      "clinical_category": "Neurological Emergency",
+      "reason_template": "Sudden focal loss of function: face droop, unilateral weakness, or slurred speech.",
+      "caveat": "Emergency medical services must be contacted immediately. Time-dependent thrombolysis/thrombectomy window applies."
+    },
+    {
+      "name": "Transient Ischemic Attack (TIA)",
+      "clinical_category": "Vascular Neurology",
+      "reason_template": "Brief episode of neurological dysfunction resolving spontaneously within 24 hours.",
+      "caveat": "Requires urgent specialist clinical evaluation, neuroimaging, and carotid evaluation to prevent major stroke."
+    },
+    {
+      "name": "Peripheral neuropathy",
+      "clinical_category": "Neuromuscular",
+      "reason_template": "Subacute or chronic symmetric distal numbness/pins-and-needles sensation.",
+      "caveat": "Outpatient neurological evaluation recommended for nerve conduction studies."
+    }
+  ],
+  "recommended_questions": [
+    {
+      "field": "fast_symptoms",
+      "priority": 1,
+      "safety_relevance": "Core international FAST stroke screening triage.",
+      "question": "Can you smile evenly, raise both arms up in front of you, and repeat a simple sentence clearly?"
+    },
+    {
+      "field": "time_last_known_well",
+      "priority": 2,
+      "safety_relevance": "Critical metric determining eligibility for time-sensitive thrombolytic or endovascular therapy.",
+      "question": "What exact time were you last seen or feeling completely normal?"
+    },
+    {
+      "field": "vision_and_coordination",
+      "priority": 3,
+      "safety_relevance": "Detects posterior circulation stroke and cerebellar compromise.",
+      "question": "Are you having sudden double vision, difficulty walking, or severe loss of balance?"
+    }
+  ]
+}

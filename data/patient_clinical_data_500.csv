@@ -1,0 +1,501 @@
+patient_id,age,sex,chief_complaint,symptom_duration,pain_severity_1_10,fever,cough,breathing_difficulty,chest_pain,headache,vomiting,diarrhea,abdominal_pain,radiating_pain,sudden_onset,confusion,fainting,possible_condition,risk_level,urgent_attention,recommended_action
+P0001,32,M,abdominal pain,2 hours,4,1,0,0,0,0,0,0,1,0,0,0,0,Urinary tract infection,MODERATE,0,Medical review
+P0002,31,M,abdominal pain,2 hours,10,0,0,0,0,0,0,0,1,0,0,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0003,47,M,headache,1 day,8,0,0,0,0,1,0,0,0,0,1,1,0,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0004,53,M,headache,2 hours,3,1,1,0,0,1,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0005,61,M,headache,6 hours,8,0,0,0,0,1,0,0,0,0,0,0,0,Migraine,MODERATE,0,Medical review
+P0006,62,F,headache,2 days,5,0,0,0,0,1,0,0,0,0,0,0,0,Tension-type headache,LOW,0,Routine medical review
+P0007,33,F,headache,2 days,7,0,0,0,0,1,1,0,0,0,0,0,0,Migraine,MODERATE,0,Medical review
+P0008,42,M,headache,1 week,3,0,0,0,0,1,0,0,0,0,0,0,0,Tension-type headache,LOW,0,Routine medical review
+P0009,55,M,abdominal pain,6 hours,5,1,0,0,0,0,1,1,1,0,0,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0010,63,M,breathing difficulty,2 hours,8,0,0,1,0,0,0,0,0,0,0,0,0,Asthma/respiratory exacerbation,HIGH,1,Urgent medical evaluation
+P0011,77,F,abdominal pain,3 days,6,0,0,0,0,0,0,0,1,0,0,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0012,59,M,abdominal pain,2 days,3,1,0,0,0,0,1,1,1,0,0,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0013,58,M,breathing difficulty,6 hours,9,0,1,1,1,0,0,0,0,0,0,0,0,Asthma/respiratory exacerbation,HIGH,1,Urgent medical evaluation
+P0014,35,M,abdominal pain,2 days,7,1,0,0,0,0,1,0,1,0,0,0,0,Urinary tract infection,MODERATE,0,Medical review
+P0015,69,F,abdominal pain,3 days,3,0,0,0,0,0,1,0,1,0,0,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0016,38,F,abdominal pain,2 days,7,1,0,0,0,0,1,0,1,0,1,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0017,50,M,breathing difficulty,6 hours,6,0,1,1,1,0,0,0,0,0,0,0,0,Asthma/respiratory exacerbation,HIGH,1,Urgent medical evaluation
+P0018,73,M,chest pain,2 hours,8,0,0,0,1,0,0,0,0,0,0,1,0,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0019,65,M,headache,1 day,10,0,0,0,0,1,0,0,0,0,1,0,1,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0020,20,M,cough,2 days,5,1,1,0,0,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0021,28,M,abdominal pain,2 hours,3,1,0,0,0,0,0,0,1,0,0,0,0,Urinary tract infection,MODERATE,0,Medical review
+P0022,78,M,abdominal pain,2 hours,6,0,0,0,0,0,0,0,1,0,1,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0023,43,F,chest pain,2 hours,9,0,0,1,1,0,0,0,0,1,0,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0024,46,M,cough,30 minutes,4,0,1,0,0,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0025,25,M,headache,30 minutes,5,0,0,0,0,1,1,0,0,0,0,0,0,Migraine,MODERATE,0,Medical review
+P0026,83,M,abdominal pain,2 days,5,0,0,0,0,0,0,0,1,0,0,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0027,34,F,vomiting,6 hours,3,0,0,0,0,0,1,0,1,0,1,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0028,72,F,chest pain,2 hours,6,0,0,0,1,0,0,0,0,0,1,1,0,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0029,42,M,headache,2 hours,9,0,0,0,0,1,0,0,0,0,1,0,1,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0030,53,F,abdominal pain,30 minutes,7,0,0,0,0,0,1,0,1,0,0,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0031,48,M,chest pain,30 minutes,9,0,0,1,1,0,0,0,0,0,1,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0032,39,F,headache,6 hours,5,0,0,0,0,1,0,0,0,0,0,0,0,Tension-type headache,LOW,0,Routine medical review
+P0033,76,F,chest pain,2 hours,7,0,0,1,1,0,0,0,0,0,1,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0034,25,M,abdominal pain,2 days,3,1,0,0,0,0,0,0,1,0,0,0,0,Urinary tract infection,MODERATE,0,Medical review
+P0035,79,M,headache,30 minutes,6,0,0,0,0,1,0,0,0,0,0,0,0,Tension-type headache,LOW,0,Routine medical review
+P0036,41,M,abdominal pain,2 days,7,1,0,0,0,0,0,0,1,0,0,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0037,49,M,abdominal pain,2 hours,7,1,0,0,0,0,1,0,1,0,1,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0038,58,M,abdominal pain,3 days,5,0,0,0,0,0,0,0,1,0,0,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0039,56,F,cough,2 days,8,0,1,0,1,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0040,30,M,headache,6 hours,8,0,0,0,0,1,0,0,0,0,1,1,0,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0041,26,M,cough,3 days,8,1,1,0,1,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0042,56,M,breathing difficulty,6 hours,10,0,1,1,0,0,0,0,0,0,0,0,0,Asthma/respiratory exacerbation,HIGH,1,Urgent medical evaluation
+P0043,32,M,abdominal pain,2 days,5,0,0,0,0,0,1,0,1,0,0,0,0,Urinary tract infection,MODERATE,0,Medical review
+P0044,44,F,diarrhea,3 days,3,1,0,0,0,0,1,1,1,0,0,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0045,72,F,headache,6 hours,2,0,0,0,0,1,0,0,0,0,0,0,0,Tension-type headache,LOW,0,Routine medical review
+P0046,34,F,headache,30 minutes,2,1,1,0,0,0,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0047,37,M,cough,6 hours,4,0,1,1,0,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0048,64,M,cough,1 week,6,0,1,0,0,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0049,70,M,abdominal pain,1 week,4,0,0,0,0,0,0,1,1,0,1,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0050,70,M,abdominal pain,1 day,3,0,0,0,0,0,0,0,1,0,0,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0051,22,F,abdominal pain,30 minutes,4,1,0,0,0,0,1,1,1,0,0,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0052,42,F,cough,3 days,6,1,1,0,1,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0053,83,F,breathing difficulty,6 hours,10,0,1,1,0,0,0,0,0,0,0,0,0,Asthma/respiratory exacerbation,HIGH,1,Urgent medical evaluation
+P0054,40,F,headache,2 days,2,0,0,0,0,1,0,0,0,0,0,0,0,Tension-type headache,LOW,0,Routine medical review
+P0055,73,F,abdominal pain,1 day,6,1,0,0,0,0,0,0,1,0,0,0,0,Urinary tract infection,MODERATE,0,Medical review
+P0056,42,F,headache,30 minutes,5,0,0,0,0,1,0,0,0,0,0,0,0,Tension-type headache,LOW,0,Routine medical review
+P0057,84,M,cough,6 hours,8,1,1,0,1,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0058,33,F,headache,1 day,9,0,0,0,0,1,0,0,0,0,1,1,1,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0059,55,M,vomiting,6 hours,6,1,0,0,0,0,1,0,1,0,0,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0060,54,M,chest pain,3 days,9,0,0,1,1,0,0,0,0,1,1,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0061,45,F,abdominal pain,2 days,3,0,0,0,0,0,1,0,1,0,0,0,0,Urinary tract infection,MODERATE,0,Medical review
+P0062,60,M,diarrhea,30 minutes,4,0,0,0,0,0,1,0,1,0,0,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0063,49,F,abdominal pain,3 days,7,1,0,0,0,0,0,0,1,0,1,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0064,67,F,chest pain,1 week,7,0,0,0,1,0,0,0,0,0,0,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0065,72,M,headache,1 day,2,1,0,0,0,0,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0066,35,F,breathing difficulty,1 week,10,0,1,1,1,0,0,0,0,0,1,0,0,Asthma/respiratory exacerbation,HIGH,1,Urgent medical evaluation
+P0067,75,M,abdominal pain,1 week,6,1,0,0,0,0,1,0,1,0,0,0,0,Urinary tract infection,MODERATE,0,Medical review
+P0068,49,F,headache,1 day,9,0,0,0,0,1,0,0,0,0,1,0,1,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0069,27,F,vomiting,2 hours,4,0,0,0,0,0,1,1,1,0,0,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0070,67,M,abdominal pain,1 day,3,0,0,0,0,0,1,0,1,0,0,0,0,Urinary tract infection,MODERATE,0,Medical review
+P0071,60,F,chest pain,1 week,7,0,0,0,1,0,0,0,0,1,1,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0072,20,F,chest pain,1 day,8,0,0,0,1,0,0,0,0,1,1,1,0,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0073,46,F,chest pain,3 days,6,0,0,1,1,0,0,0,0,1,1,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0074,69,M,chest pain,3 days,10,0,0,0,1,0,0,0,0,0,1,0,0,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0075,72,M,chest pain,1 day,6,0,0,0,1,0,0,0,0,1,1,1,0,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0076,59,F,chest pain,1 day,9,0,0,1,1,0,0,0,0,1,0,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0077,20,M,cough,2 hours,4,0,1,0,0,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0078,43,M,abdominal pain,3 days,8,0,1,0,0,0,1,0,1,0,0,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0079,32,M,chest pain,30 minutes,8,0,0,1,1,0,0,0,0,0,0,0,1,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0080,21,F,abdominal pain,2 days,10,0,0,0,0,0,0,0,1,0,1,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0081,49,M,abdominal pain,1 week,7,1,0,0,0,0,0,0,1,0,0,0,0,Urinary tract infection,MODERATE,0,Medical review
+P0082,23,F,headache,2 days,9,0,0,0,0,1,0,0,0,0,1,1,0,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0083,61,M,chest pain,3 days,6,0,0,1,1,0,0,0,0,1,1,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0084,76,M,chest pain,1 day,10,0,0,0,1,0,0,0,0,1,1,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0085,73,F,cough,2 hours,7,0,1,0,1,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0086,77,F,cough,1 day,5,0,1,1,1,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0087,45,F,abdominal pain,2 days,4,0,0,0,0,0,0,0,1,0,1,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0088,53,M,headache,3 days,8,0,0,0,0,1,0,0,0,0,1,0,0,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0089,70,F,headache,1 day,8,0,0,0,0,1,0,0,0,0,1,1,1,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0090,20,M,abdominal pain,3 days,3,0,0,0,0,0,0,0,1,0,1,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0091,49,F,breathing difficulty,1 day,10,0,1,1,1,0,0,0,0,0,1,0,0,Asthma/respiratory exacerbation,HIGH,1,Urgent medical evaluation
+P0092,60,F,abdominal pain,6 hours,5,1,0,0,0,0,1,0,1,0,0,0,0,Urinary tract infection,MODERATE,0,Medical review
+P0093,47,M,abdominal pain,3 days,5,0,0,0,0,0,0,0,1,0,0,0,0,Urinary tract infection,MODERATE,0,Medical review
+P0094,41,M,diarrhea,6 hours,3,1,0,0,0,0,1,1,1,0,0,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0095,47,F,cough,30 minutes,2,0,0,0,0,1,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0096,55,M,breathing difficulty,1 day,9,0,0,1,0,0,0,0,0,0,1,0,0,Asthma/respiratory exacerbation,HIGH,1,Urgent medical evaluation
+P0097,79,F,cough,30 minutes,7,0,1,0,1,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0098,26,F,chest pain,30 minutes,10,0,0,0,1,0,0,0,0,0,0,0,1,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0099,49,M,headache,1 day,9,0,0,0,0,1,0,0,0,0,1,0,1,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0100,74,F,abdominal pain,1 week,10,0,0,0,0,0,0,0,1,0,1,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0101,44,M,abdominal pain,2 hours,2,0,0,0,0,0,0,0,1,0,0,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0102,40,M,fever,30 minutes,4,1,1,0,0,1,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0103,47,F,abdominal pain,3 days,6,1,0,0,0,0,0,0,1,0,0,0,0,Urinary tract infection,MODERATE,0,Medical review
+P0104,47,F,breathing difficulty,2 days,10,0,0,1,1,0,0,0,0,0,0,0,0,Asthma/respiratory exacerbation,HIGH,1,Urgent medical evaluation
+P0105,46,M,abdominal pain,30 minutes,3,0,0,0,0,0,0,0,1,0,0,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0106,39,F,abdominal pain,3 days,9,0,0,0,0,0,1,0,1,0,1,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0107,56,F,abdominal pain,1 day,6,0,0,0,0,0,0,0,1,0,1,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0108,28,M,chest pain,30 minutes,10,0,0,1,1,0,0,0,0,1,0,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0109,47,M,breathing difficulty,2 days,8,0,0,1,0,0,0,0,0,0,1,0,0,Asthma/respiratory exacerbation,HIGH,1,Urgent medical evaluation
+P0110,74,F,headache,6 hours,5,1,1,0,0,0,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0111,70,F,cough,3 days,7,0,1,0,1,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0112,81,F,breathing difficulty,6 hours,9,0,0,1,1,0,0,0,0,0,0,0,0,Asthma/respiratory exacerbation,HIGH,1,Urgent medical evaluation
+P0113,50,F,headache,3 days,8,0,0,0,0,1,0,0,0,0,0,0,0,Migraine,MODERATE,0,Medical review
+P0114,77,F,headache,2 days,3,0,0,0,0,1,0,0,0,0,0,0,0,Tension-type headache,LOW,0,Routine medical review
+P0115,64,F,breathing difficulty,2 days,9,0,0,1,0,0,0,0,0,0,1,0,0,Asthma/respiratory exacerbation,HIGH,1,Urgent medical evaluation
+P0116,34,F,chest pain,2 days,6,0,0,1,1,0,0,0,0,0,0,0,1,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0117,19,F,headache,1 day,6,0,0,0,0,1,0,0,0,0,0,0,0,Migraine,MODERATE,0,Medical review
+P0118,33,M,chest pain,2 hours,10,0,0,1,1,0,0,0,0,1,1,1,1,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0119,76,M,chest pain,6 hours,10,0,0,0,1,0,0,0,0,0,0,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0120,71,F,headache,3 days,9,0,0,0,0,1,0,0,0,0,1,0,1,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0121,56,F,cough,1 week,6,1,1,0,0,1,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0122,66,F,cough,1 week,5,0,1,0,1,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0123,70,M,cough,1 day,5,1,1,1,1,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0124,22,M,headache,1 week,10,0,0,0,0,1,0,0,0,0,1,1,0,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0125,74,M,headache,1 day,9,0,0,0,0,1,0,0,0,0,1,0,0,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0126,37,M,chest pain,6 hours,8,0,0,1,1,0,0,0,0,1,0,1,1,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0127,80,M,abdominal pain,3 days,7,1,0,0,0,0,0,0,1,0,0,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0128,29,F,headache,2 hours,5,0,0,0,0,1,1,0,0,0,0,0,0,Migraine,MODERATE,0,Medical review
+P0129,56,M,headache,1 week,4,0,0,0,0,1,0,0,0,0,0,0,0,Tension-type headache,LOW,0,Routine medical review
+P0130,25,F,cough,2 days,5,1,1,1,0,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0131,70,M,fever,2 days,5,0,1,0,0,0,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0132,36,M,chest pain,3 days,9,0,0,1,1,0,0,0,0,1,0,1,1,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0133,38,M,chest pain,1 week,10,0,0,1,1,0,0,0,0,1,1,1,1,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0134,56,M,chest pain,2 days,6,0,0,1,1,0,0,0,0,0,1,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0135,63,F,abdominal pain,6 hours,3,1,0,0,0,0,1,0,1,0,0,0,0,Urinary tract infection,MODERATE,0,Medical review
+P0136,19,M,abdominal pain,2 hours,10,0,0,0,0,0,1,0,1,0,1,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0137,42,F,breathing difficulty,1 week,7,0,0,1,0,0,0,0,0,0,1,0,0,Asthma/respiratory exacerbation,HIGH,1,Urgent medical evaluation
+P0138,74,M,abdominal pain,6 hours,9,0,0,0,0,0,1,0,1,0,0,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0139,71,M,abdominal pain,1 week,5,0,0,0,0,0,1,1,1,0,1,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0140,55,F,headache,2 hours,8,0,0,0,0,1,0,0,0,0,0,0,0,Migraine,MODERATE,0,Medical review
+P0141,46,F,headache,30 minutes,9,0,0,0,0,1,0,0,0,0,1,0,1,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0142,51,M,chest pain,1 day,8,0,0,1,1,0,0,0,0,1,1,0,0,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0143,21,F,abdominal pain,3 days,8,1,0,0,0,0,1,0,1,0,0,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0144,70,M,fever,30 minutes,2,0,1,0,0,1,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0145,48,M,chest pain,1 day,8,0,0,1,1,0,0,0,0,1,0,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0146,30,F,abdominal pain,2 hours,10,0,0,0,0,0,1,0,1,0,1,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0147,74,F,vomiting,6 hours,3,1,0,0,0,0,0,1,1,0,1,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0148,42,M,chest pain,2 hours,7,0,0,0,1,0,0,0,0,0,0,1,0,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0149,44,M,headache,6 hours,8,0,0,0,0,1,0,0,0,0,1,0,0,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0150,36,M,abdominal pain,2 days,3,0,0,0,0,0,0,0,1,0,0,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0151,50,M,headache,30 minutes,5,0,0,0,0,1,0,0,0,0,0,0,0,Migraine,MODERATE,0,Medical review
+P0152,63,M,abdominal pain,30 minutes,9,0,0,0,0,0,1,0,1,0,0,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0153,34,F,headache,1 day,8,0,0,0,0,1,0,0,0,0,1,0,1,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0154,64,M,chest pain,30 minutes,10,0,0,0,1,0,0,0,0,0,1,1,0,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0155,79,F,chest pain,30 minutes,9,0,0,0,1,0,0,0,0,1,0,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0156,59,M,headache,2 days,6,0,0,0,0,1,1,0,0,0,0,0,0,Migraine,MODERATE,0,Medical review
+P0157,59,F,abdominal pain,1 week,9,1,0,0,0,0,0,0,1,0,1,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0158,32,M,chest pain,1 week,7,0,0,1,1,0,0,0,0,1,1,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0159,76,F,chest pain,3 days,8,0,0,0,1,0,0,0,0,1,1,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0160,50,F,headache,30 minutes,2,1,0,0,0,0,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0161,73,M,abdominal pain,2 days,4,1,0,0,0,0,0,0,1,0,0,0,0,Urinary tract infection,MODERATE,0,Medical review
+P0162,60,M,chest pain,2 days,9,0,0,1,1,0,0,0,0,0,1,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0163,57,F,headache,3 days,6,0,0,0,0,1,0,0,0,0,0,0,0,Migraine,MODERATE,0,Medical review
+P0164,79,M,headache,30 minutes,7,0,0,0,0,1,1,0,0,0,0,0,0,Migraine,MODERATE,0,Medical review
+P0165,53,M,chest pain,2 hours,10,0,0,0,1,0,0,0,0,1,0,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0166,52,F,cough,2 days,5,1,1,0,0,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0167,69,M,headache,1 day,5,0,0,0,0,0,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0168,76,F,cough,2 hours,2,1,1,0,0,0,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0169,38,M,breathing difficulty,1 day,6,0,1,1,1,0,0,0,0,0,1,0,0,Asthma/respiratory exacerbation,HIGH,1,Urgent medical evaluation
+P0170,74,F,abdominal pain,6 hours,3,0,0,0,0,0,0,0,1,0,0,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0171,73,M,abdominal pain,2 days,6,0,0,0,0,0,0,0,1,0,1,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0172,57,M,vomiting,1 week,5,0,0,0,0,0,0,0,1,0,0,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0173,35,F,abdominal pain,30 minutes,4,0,0,0,0,0,0,0,1,0,0,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0174,81,F,fever,1 day,2,1,0,0,0,1,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0175,23,F,headache,30 minutes,5,0,0,0,0,1,0,0,0,0,0,0,0,Tension-type headache,LOW,0,Routine medical review
+P0176,58,F,abdominal pain,1 day,10,1,0,0,0,0,0,0,1,0,1,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0177,20,F,headache,1 week,5,1,1,0,0,0,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0178,31,M,chest pain,1 week,10,0,0,1,1,0,0,0,0,0,1,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0179,57,F,vomiting,1 week,7,0,0,0,0,0,0,0,1,0,0,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0180,62,F,abdominal pain,2 hours,4,0,0,0,0,0,0,0,1,0,0,0,0,Urinary tract infection,MODERATE,0,Medical review
+P0181,50,M,headache,1 day,5,0,0,0,0,0,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0182,75,F,breathing difficulty,1 day,8,0,0,1,1,0,0,0,0,0,0,0,0,Asthma/respiratory exacerbation,HIGH,1,Urgent medical evaluation
+P0183,74,F,abdominal pain,6 hours,6,0,0,0,0,0,0,0,1,0,0,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0184,82,M,abdominal pain,30 minutes,5,0,0,0,0,0,0,0,1,0,1,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0185,25,F,abdominal pain,2 days,2,0,0,0,0,0,0,0,1,0,0,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0186,82,F,chest pain,30 minutes,9,0,0,0,1,0,0,0,0,0,1,1,0,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0187,75,M,cough,3 days,5,0,1,0,0,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0188,74,F,headache,6 hours,10,0,0,0,0,1,0,0,0,0,1,0,1,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0189,54,F,chest pain,30 minutes,10,0,0,1,1,0,0,0,0,0,1,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0190,60,M,headache,6 hours,10,0,0,0,0,1,0,0,0,0,1,1,1,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0191,37,F,headache,6 hours,6,0,0,0,0,1,1,0,0,0,0,0,0,Migraine,MODERATE,0,Medical review
+P0192,68,M,abdominal pain,1 week,7,1,0,0,0,0,1,0,1,0,1,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0193,34,M,breathing difficulty,6 hours,9,0,1,1,0,0,0,0,0,0,1,0,0,Asthma/respiratory exacerbation,HIGH,1,Urgent medical evaluation
+P0194,41,M,cough,2 hours,5,1,1,0,0,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0195,27,F,headache,1 week,5,0,0,0,0,1,1,0,0,0,0,0,0,Migraine,MODERATE,0,Medical review
+P0196,34,F,fever,1 day,2,0,0,0,0,1,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0197,64,M,chest pain,1 week,9,0,0,1,1,0,0,0,0,0,0,1,1,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0198,42,F,breathing difficulty,1 week,10,0,1,1,1,0,0,0,0,0,1,0,0,Asthma/respiratory exacerbation,HIGH,1,Urgent medical evaluation
+P0199,66,F,fever,1 week,5,0,1,0,0,0,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0200,65,M,abdominal pain,1 week,5,0,0,0,0,0,0,0,1,0,0,0,0,Urinary tract infection,MODERATE,0,Medical review
+P0201,38,F,chest pain,30 minutes,9,0,0,0,1,0,0,0,0,0,0,1,1,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0202,71,M,chest pain,6 hours,7,0,0,1,1,0,0,0,0,1,0,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0203,46,M,cough,30 minutes,5,0,1,1,0,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0204,54,F,abdominal pain,2 days,6,0,0,0,0,0,1,0,1,0,0,0,0,Urinary tract infection,MODERATE,0,Medical review
+P0205,18,M,headache,2 hours,4,0,0,0,0,1,0,0,0,0,0,0,0,Tension-type headache,LOW,0,Routine medical review
+P0206,37,F,headache,6 hours,7,0,0,0,0,1,0,0,0,0,0,0,0,Migraine,MODERATE,0,Medical review
+P0207,33,M,vomiting,3 days,6,0,0,0,0,0,1,0,1,0,0,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0208,83,M,abdominal pain,30 minutes,5,0,0,0,0,0,1,0,1,0,0,0,0,Urinary tract infection,MODERATE,0,Medical review
+P0209,63,M,abdominal pain,30 minutes,10,0,0,0,0,0,1,0,1,0,0,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0210,85,M,chest pain,6 hours,6,0,0,1,1,0,0,0,0,1,1,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0211,20,F,headache,3 days,7,0,0,0,0,1,0,0,0,0,0,0,0,Migraine,MODERATE,0,Medical review
+P0212,31,F,fever,3 days,5,1,1,0,0,0,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0213,79,M,fever,30 minutes,3,1,0,0,0,1,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0214,43,M,cough,30 minutes,6,1,1,1,1,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0215,42,F,cough,1 week,4,0,1,1,1,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0216,65,F,chest pain,1 day,9,0,0,1,1,0,0,0,0,1,0,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0217,81,F,headache,30 minutes,9,0,0,0,0,1,0,0,0,0,1,0,1,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0218,73,M,headache,30 minutes,9,0,0,0,0,1,0,0,0,0,1,1,0,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0219,59,F,abdominal pain,2 hours,5,0,0,0,0,0,0,0,1,0,1,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0220,74,F,chest pain,3 days,8,0,0,0,1,0,0,0,0,1,1,0,0,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0221,69,F,headache,2 hours,10,0,0,0,0,1,0,0,0,0,1,0,0,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0222,74,M,fever,2 days,5,0,1,0,0,1,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0223,22,M,breathing difficulty,1 week,9,0,1,1,1,0,0,0,0,0,1,0,0,Asthma/respiratory exacerbation,HIGH,1,Urgent medical evaluation
+P0224,27,M,headache,3 days,9,0,0,0,0,1,0,0,0,0,1,1,1,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0225,53,M,headache,1 day,5,0,0,0,0,1,0,0,0,0,0,0,0,Migraine,MODERATE,0,Medical review
+P0226,84,F,headache,3 days,8,0,0,0,0,1,0,0,0,0,1,1,1,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0227,75,M,abdominal pain,2 hours,9,0,0,0,0,0,0,0,1,0,1,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0228,27,F,headache,3 days,4,1,0,0,0,1,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0229,26,F,abdominal pain,1 week,3,0,0,0,0,0,0,0,1,0,0,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0230,64,M,headache,2 hours,6,0,0,0,0,1,0,0,0,0,0,0,0,Migraine,MODERATE,0,Medical review
+P0231,81,M,cough,30 minutes,8,1,1,1,0,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0232,26,F,chest pain,1 week,10,0,0,1,1,0,0,0,0,1,1,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0233,27,M,cough,6 hours,8,0,1,1,1,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0234,34,M,cough,2 hours,4,0,0,0,0,0,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0235,38,F,abdominal pain,1 week,5,0,0,0,0,0,1,0,1,0,0,0,0,Urinary tract infection,MODERATE,0,Medical review
+P0236,28,F,diarrhea,2 days,7,1,0,0,0,0,1,0,1,0,0,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0237,39,M,headache,30 minutes,2,1,0,0,0,0,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0238,51,M,abdominal pain,3 days,10,1,0,0,0,0,1,0,1,0,0,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0239,56,F,diarrhea,2 hours,3,1,0,0,0,0,1,1,1,0,0,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0240,74,F,chest pain,3 days,7,0,0,1,1,0,0,0,0,1,0,1,1,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0241,62,F,cough,30 minutes,5,0,1,0,0,0,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0242,52,F,abdominal pain,2 hours,6,1,0,0,0,0,0,0,1,0,1,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0243,38,F,abdominal pain,2 days,9,0,0,0,0,0,1,0,1,0,0,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0244,77,F,abdominal pain,30 minutes,5,0,0,0,0,0,0,0,1,0,0,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0245,68,F,abdominal pain,2 days,5,0,0,0,0,0,1,0,1,0,1,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0246,78,F,headache,2 hours,8,0,0,0,0,1,0,0,0,0,1,0,1,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0247,51,F,chest pain,2 days,6,0,0,1,1,0,0,0,0,1,0,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0248,42,F,headache,2 days,9,0,0,0,0,1,0,0,0,0,1,0,1,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0249,75,F,abdominal pain,6 hours,7,0,0,0,0,0,1,0,1,0,0,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0250,61,F,fever,2 hours,2,1,0,0,0,0,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0251,60,F,headache,6 hours,9,0,0,0,0,1,0,0,0,0,1,0,0,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0252,58,M,chest pain,3 days,10,0,0,1,1,0,0,0,0,1,1,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0253,56,F,headache,6 hours,4,0,0,0,0,1,0,0,0,0,0,0,0,Tension-type headache,LOW,0,Routine medical review
+P0254,32,F,abdominal pain,3 days,9,1,0,0,0,0,1,0,1,0,0,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0255,47,M,abdominal pain,1 week,10,1,0,0,0,0,0,0,1,0,0,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0256,49,M,abdominal pain,6 hours,7,0,0,0,0,0,1,0,1,0,0,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0257,71,M,chest pain,3 days,9,0,0,0,1,0,0,0,0,1,0,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0258,35,M,headache,6 hours,9,0,0,0,0,1,0,0,0,0,1,1,1,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0259,40,F,headache,2 days,9,0,0,0,0,1,0,0,0,0,1,1,1,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0260,79,M,vomiting,3 days,5,1,0,0,0,0,1,0,1,0,0,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0261,80,F,chest pain,1 day,10,0,0,1,1,0,0,0,0,1,1,0,1,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0262,62,M,abdominal pain,3 days,2,0,0,0,0,0,0,0,1,0,1,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0263,28,F,chest pain,2 hours,9,0,0,1,1,0,0,0,0,0,0,1,1,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0264,31,M,abdominal pain,6 hours,3,0,0,0,0,0,0,0,1,0,1,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0265,78,M,breathing difficulty,3 days,7,0,0,1,0,0,0,0,0,0,1,0,0,Asthma/respiratory exacerbation,HIGH,1,Urgent medical evaluation
+P0266,78,F,breathing difficulty,3 days,7,0,1,1,1,0,0,0,0,0,1,0,0,Asthma/respiratory exacerbation,HIGH,1,Urgent medical evaluation
+P0267,25,M,breathing difficulty,1 day,10,0,0,1,0,0,0,0,0,0,0,0,0,Asthma/respiratory exacerbation,HIGH,1,Urgent medical evaluation
+P0268,40,M,chest pain,30 minutes,7,0,0,1,1,0,0,0,0,1,0,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0269,56,M,cough,1 week,5,1,1,1,1,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0270,82,F,abdominal pain,6 hours,3,0,0,0,0,0,0,0,1,0,0,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0271,38,F,breathing difficulty,1 week,8,0,0,1,0,0,0,0,0,0,1,0,0,Asthma/respiratory exacerbation,HIGH,1,Urgent medical evaluation
+P0272,55,M,headache,1 day,2,1,1,0,0,1,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0273,30,M,cough,1 day,4,1,0,0,0,0,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0274,48,F,abdominal pain,2 days,4,0,0,0,0,0,0,0,1,0,1,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0275,19,F,breathing difficulty,1 day,8,0,0,1,0,0,0,0,0,0,0,0,0,Asthma/respiratory exacerbation,HIGH,1,Urgent medical evaluation
+P0276,57,M,chest pain,2 days,6,0,0,1,1,0,0,0,0,1,1,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0277,46,M,cough,3 days,5,0,1,0,0,1,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0278,78,M,diarrhea,30 minutes,3,1,0,0,0,0,0,1,1,0,0,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0279,82,M,abdominal pain,30 minutes,8,1,0,0,0,0,1,0,1,0,0,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0280,44,F,headache,1 day,8,0,0,0,0,1,0,0,0,0,0,0,0,Migraine,MODERATE,0,Medical review
+P0281,34,F,chest pain,6 hours,10,0,0,0,1,0,0,0,0,1,1,0,1,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0282,18,M,abdominal pain,3 days,7,1,0,0,0,0,1,0,1,0,0,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0283,26,M,headache,6 hours,8,0,0,0,0,1,0,0,0,0,0,0,0,Migraine,MODERATE,0,Medical review
+P0284,70,M,headache,1 week,5,1,1,0,0,1,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0285,66,F,headache,30 minutes,6,0,0,0,0,1,1,0,0,0,0,0,0,Migraine,MODERATE,0,Medical review
+P0286,40,F,headache,1 week,8,0,0,0,0,1,0,0,0,0,1,0,0,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0287,20,F,chest pain,6 hours,10,0,0,1,1,0,0,0,0,1,0,0,1,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0288,37,F,diarrhea,2 hours,7,1,0,0,0,0,0,0,1,0,0,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0289,44,M,headache,2 days,5,0,0,0,0,1,1,0,0,0,0,0,0,Migraine,MODERATE,0,Medical review
+P0290,24,M,abdominal pain,2 hours,6,0,0,0,0,0,1,0,1,0,0,0,0,Urinary tract infection,MODERATE,0,Medical review
+P0291,45,M,headache,2 days,6,1,0,0,0,1,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0292,59,M,abdominal pain,1 day,3,0,0,0,0,0,0,0,1,0,0,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0293,56,F,headache,2 days,6,0,0,0,0,1,0,0,0,0,0,0,0,Tension-type headache,LOW,0,Routine medical review
+P0294,40,F,headache,3 days,9,0,0,0,0,1,0,0,0,0,1,0,1,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0295,66,F,abdominal pain,6 hours,6,1,0,0,0,0,0,0,1,0,0,0,0,Urinary tract infection,MODERATE,0,Medical review
+P0296,66,M,headache,6 hours,9,0,0,0,0,1,0,0,0,0,1,0,0,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0297,36,F,headache,1 day,6,0,0,0,0,1,0,0,0,0,0,0,0,Tension-type headache,LOW,0,Routine medical review
+P0298,71,M,chest pain,3 days,8,0,0,0,1,0,0,0,0,0,1,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0299,28,F,cough,1 day,6,0,1,0,0,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0300,23,M,diarrhea,30 minutes,5,0,0,0,0,0,0,1,1,0,1,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0301,45,M,abdominal pain,3 days,6,0,0,0,0,0,0,0,1,0,0,0,0,Urinary tract infection,MODERATE,0,Medical review
+P0302,44,F,diarrhea,6 hours,6,1,0,0,0,0,1,1,1,0,1,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0303,51,F,headache,1 week,9,0,0,0,0,1,0,0,0,0,1,1,0,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0304,78,F,vomiting,3 days,7,0,0,0,0,0,1,1,1,0,0,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0305,36,M,abdominal pain,6 hours,6,0,0,0,0,0,0,0,1,0,1,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0306,37,M,cough,2 days,7,0,1,1,0,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0307,61,F,chest pain,3 days,9,0,0,1,1,0,0,0,0,0,1,0,0,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0308,80,M,headache,1 week,10,0,0,0,0,1,0,0,0,0,1,0,0,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0309,27,M,headache,2 hours,5,0,0,0,0,1,0,0,0,0,0,0,0,Tension-type headache,LOW,0,Routine medical review
+P0310,47,M,abdominal pain,2 days,3,0,0,0,0,0,0,0,1,0,0,0,0,Urinary tract infection,MODERATE,0,Medical review
+P0311,76,F,headache,3 days,6,0,0,0,0,1,0,0,0,0,0,0,0,Tension-type headache,LOW,0,Routine medical review
+P0312,79,F,headache,2 days,2,0,0,0,0,1,0,0,0,0,0,0,0,Tension-type headache,LOW,0,Routine medical review
+P0313,70,M,headache,3 days,6,0,0,0,0,1,0,0,0,0,0,0,0,Tension-type headache,LOW,0,Routine medical review
+P0314,53,F,headache,1 week,6,0,0,0,0,1,0,0,0,0,0,0,0,Tension-type headache,LOW,0,Routine medical review
+P0315,73,M,headache,2 hours,5,0,0,0,0,1,0,0,0,0,0,0,0,Migraine,MODERATE,0,Medical review
+P0316,42,F,cough,1 day,6,1,1,1,0,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0317,76,M,abdominal pain,3 days,5,0,0,0,0,0,0,0,1,0,0,0,0,Urinary tract infection,MODERATE,0,Medical review
+P0318,22,M,chest pain,3 days,9,0,0,1,1,0,0,0,0,1,0,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0319,19,M,headache,3 days,8,0,0,0,0,1,1,0,0,0,0,0,0,Migraine,MODERATE,0,Medical review
+P0320,60,M,headache,1 week,8,0,0,0,0,1,0,0,0,0,1,0,0,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0321,78,F,headache,3 days,2,0,0,0,0,1,0,0,0,0,0,0,0,Tension-type headache,LOW,0,Routine medical review
+P0322,53,M,cough,30 minutes,5,0,0,0,0,0,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0323,56,M,abdominal pain,1 week,8,1,0,0,0,0,1,0,1,0,1,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0324,35,M,headache,30 minutes,10,0,0,0,0,1,0,0,0,0,1,1,0,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0325,73,M,headache,1 week,7,0,0,0,0,1,1,0,0,0,0,0,0,Migraine,MODERATE,0,Medical review
+P0326,59,M,breathing difficulty,6 hours,8,0,1,1,1,0,0,0,0,0,0,0,0,Asthma/respiratory exacerbation,HIGH,1,Urgent medical evaluation
+P0327,66,F,headache,3 days,3,1,0,0,0,1,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0328,27,M,abdominal pain,3 days,3,0,0,0,0,0,0,0,1,0,1,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0329,37,F,cough,6 hours,4,1,1,0,0,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0330,74,F,abdominal pain,30 minutes,2,0,0,0,0,0,0,0,1,0,0,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0331,41,F,chest pain,2 days,6,0,0,1,1,0,0,0,0,0,0,1,0,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0332,59,F,headache,1 day,4,0,0,0,0,1,0,0,0,0,0,0,0,Tension-type headache,LOW,0,Routine medical review
+P0333,67,M,abdominal pain,3 days,7,0,0,0,0,0,0,0,1,0,0,0,0,Urinary tract infection,MODERATE,0,Medical review
+P0334,66,M,cough,30 minutes,3,1,1,0,0,1,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0335,39,F,abdominal pain,1 day,5,0,0,0,0,0,0,0,1,0,1,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0336,27,F,abdominal pain,2 days,3,0,0,0,0,0,0,0,1,0,1,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0337,43,F,headache,30 minutes,6,0,0,0,0,1,1,0,0,0,0,0,0,Migraine,MODERATE,0,Medical review
+P0338,68,F,abdominal pain,1 day,10,1,0,0,0,0,1,0,1,0,1,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0339,35,F,cough,1 day,5,0,1,1,1,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0340,58,F,abdominal pain,6 hours,7,1,0,0,0,0,0,0,1,0,0,0,0,Urinary tract infection,MODERATE,0,Medical review
+P0341,66,F,chest pain,3 days,6,0,0,1,1,0,0,0,0,0,0,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0342,21,F,abdominal pain,1 week,6,0,0,0,0,0,1,0,1,0,0,0,0,Urinary tract infection,MODERATE,0,Medical review
+P0343,26,F,breathing difficulty,6 hours,9,0,0,1,1,0,0,0,0,0,0,0,0,Asthma/respiratory exacerbation,HIGH,1,Urgent medical evaluation
+P0344,37,F,chest pain,2 days,9,0,0,0,1,0,0,0,0,1,1,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0345,82,F,headache,30 minutes,8,0,0,0,0,1,0,0,0,0,1,1,0,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0346,49,F,headache,30 minutes,5,0,1,0,0,1,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0347,19,M,abdominal pain,1 day,3,0,0,0,0,0,0,0,1,0,0,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0348,65,F,chest pain,1 day,8,0,0,0,1,0,0,0,0,0,1,0,1,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0349,28,M,abdominal pain,6 hours,5,0,0,0,0,0,1,0,1,0,0,0,0,Urinary tract infection,MODERATE,0,Medical review
+P0350,76,M,headache,30 minutes,9,0,0,0,0,1,0,0,0,0,1,1,1,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0351,74,F,cough,30 minutes,4,0,1,1,0,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0352,61,M,breathing difficulty,6 hours,7,0,0,1,0,0,0,0,0,0,0,0,0,Asthma/respiratory exacerbation,HIGH,1,Urgent medical evaluation
+P0353,72,F,vomiting,3 days,6,1,0,0,0,0,0,0,1,0,0,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0354,43,F,abdominal pain,2 hours,10,0,0,0,0,0,0,0,1,0,1,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0355,53,M,abdominal pain,2 hours,7,1,0,0,0,0,1,0,1,0,0,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0356,76,M,abdominal pain,2 days,5,0,0,0,0,0,0,0,1,0,1,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0357,67,F,abdominal pain,2 days,7,1,0,0,0,0,1,0,1,0,1,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0358,40,F,abdominal pain,2 hours,7,1,0,0,0,0,0,0,1,0,0,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0359,57,M,cough,2 hours,6,0,1,0,0,1,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0360,67,F,cough,2 hours,4,0,0,0,0,1,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0361,41,F,chest pain,1 week,8,0,0,0,1,0,0,0,0,0,1,0,0,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0362,67,F,chest pain,2 hours,9,0,0,1,1,0,0,0,0,1,1,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0363,28,M,vomiting,2 hours,7,0,0,0,0,0,0,1,1,0,1,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0364,76,F,headache,6 hours,10,0,0,0,0,1,0,0,0,0,1,0,0,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0365,64,M,abdominal pain,1 day,7,1,0,0,0,0,0,0,1,0,0,0,0,Urinary tract infection,MODERATE,0,Medical review
+P0366,31,M,abdominal pain,6 hours,2,0,0,0,0,0,0,0,1,0,1,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0367,62,M,chest pain,2 days,7,0,0,0,1,0,0,0,0,0,1,1,0,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0368,35,M,abdominal pain,6 hours,5,0,0,0,0,0,1,1,1,0,1,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0369,52,M,cough,2 hours,3,0,1,0,0,0,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0370,36,F,diarrhea,3 days,7,0,0,0,0,0,1,1,1,0,1,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0371,71,F,chest pain,1 day,6,0,0,0,1,0,0,0,0,1,1,1,1,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0372,59,M,abdominal pain,1 week,6,0,0,0,0,0,1,0,1,0,0,0,0,Urinary tract infection,MODERATE,0,Medical review
+P0373,26,F,vomiting,6 hours,5,1,0,0,0,0,0,1,1,0,1,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0374,34,F,cough,30 minutes,7,0,1,0,0,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0375,33,M,chest pain,2 hours,6,0,0,1,1,0,0,0,0,1,0,0,1,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0376,53,M,breathing difficulty,3 days,8,0,1,1,0,0,0,0,0,0,1,0,0,Asthma/respiratory exacerbation,HIGH,1,Urgent medical evaluation
+P0377,39,M,chest pain,3 days,7,0,0,1,1,0,0,0,0,1,0,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0378,30,M,vomiting,30 minutes,7,0,0,0,0,0,0,0,1,0,1,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0379,19,F,headache,1 day,8,0,0,0,0,1,0,0,0,0,0,0,0,Migraine,MODERATE,0,Medical review
+P0380,27,M,chest pain,6 hours,6,0,0,0,1,0,0,0,0,0,1,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0381,56,M,chest pain,2 days,7,0,0,0,1,0,0,0,0,0,0,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0382,39,F,cough,3 days,8,0,1,0,1,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0383,74,M,headache,1 week,5,0,0,0,0,1,0,0,0,0,0,0,0,Migraine,MODERATE,0,Medical review
+P0384,33,F,cough,6 hours,5,1,1,1,0,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0385,28,M,headache,1 week,10,0,0,0,0,1,0,0,0,0,1,1,0,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0386,56,M,headache,6 hours,10,0,0,0,0,1,0,0,0,0,1,0,1,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0387,24,M,chest pain,6 hours,6,0,0,1,1,0,0,0,0,0,1,0,0,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0388,58,M,chest pain,1 week,8,0,0,1,1,0,0,0,0,0,1,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0389,27,M,abdominal pain,30 minutes,7,1,0,0,0,0,0,0,1,0,0,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0390,25,F,headache,3 days,9,0,0,0,0,1,0,0,0,0,1,1,1,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0391,69,M,breathing difficulty,6 hours,10,0,0,1,1,0,0,0,0,0,0,0,0,Asthma/respiratory exacerbation,HIGH,1,Urgent medical evaluation
+P0392,28,M,headache,3 days,4,1,1,0,0,0,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0393,73,M,headache,30 minutes,3,0,0,0,0,1,0,0,0,0,0,0,0,Tension-type headache,LOW,0,Routine medical review
+P0394,73,M,chest pain,3 days,8,0,0,0,1,0,0,0,0,0,0,0,0,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0395,19,M,chest pain,3 days,10,0,0,1,1,0,0,0,0,1,0,1,0,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0396,52,M,headache,1 week,4,0,0,0,0,1,0,0,0,0,0,0,0,Tension-type headache,LOW,0,Routine medical review
+P0397,72,F,headache,1 day,8,0,0,0,0,1,0,0,0,0,1,1,0,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0398,76,F,headache,1 week,5,0,0,0,0,1,0,0,0,0,0,0,0,Tension-type headache,LOW,0,Routine medical review
+P0399,39,F,cough,30 minutes,6,0,0,0,0,0,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0400,23,M,abdominal pain,1 week,4,1,0,0,0,0,1,1,1,0,0,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0401,22,F,vomiting,2 days,5,1,0,0,0,0,0,1,1,0,0,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0402,65,M,headache,2 hours,10,0,0,0,0,1,0,0,0,0,1,0,0,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0403,84,M,chest pain,6 hours,9,0,0,0,1,0,0,0,0,1,1,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0404,29,F,headache,2 hours,4,0,0,0,0,1,0,0,0,0,0,0,0,Tension-type headache,LOW,0,Routine medical review
+P0405,55,F,abdominal pain,2 days,6,0,0,0,0,0,1,0,1,0,0,0,0,Urinary tract infection,MODERATE,0,Medical review
+P0406,81,M,abdominal pain,1 day,4,0,0,0,0,0,0,0,1,0,0,0,0,Urinary tract infection,MODERATE,0,Medical review
+P0407,21,M,headache,30 minutes,9,0,0,0,0,1,0,0,0,0,1,0,1,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0408,66,F,headache,1 day,6,0,0,0,0,1,0,0,0,0,0,0,0,Migraine,MODERATE,0,Medical review
+P0409,80,M,headache,1 week,3,1,0,0,0,0,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0410,84,F,abdominal pain,2 days,6,1,0,0,0,0,0,0,1,0,0,0,0,Urinary tract infection,MODERATE,0,Medical review
+P0411,30,M,breathing difficulty,3 days,9,0,0,1,0,0,0,0,0,0,1,0,0,Asthma/respiratory exacerbation,HIGH,1,Urgent medical evaluation
+P0412,34,M,abdominal pain,1 week,4,0,0,0,0,0,0,0,1,0,1,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0413,68,F,cough,2 hours,4,1,1,1,0,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0414,35,M,fever,1 day,4,0,1,0,0,1,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0415,33,F,vomiting,2 hours,3,1,0,0,0,0,1,1,1,0,0,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0416,56,M,vomiting,2 days,5,0,0,0,0,0,0,0,1,0,1,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0417,24,F,abdominal pain,1 day,3,0,0,0,0,0,0,0,1,0,0,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0418,75,M,headache,1 week,8,0,0,0,0,1,0,0,0,0,0,0,0,Migraine,MODERATE,0,Medical review
+P0419,35,M,headache,1 week,2,0,0,0,0,1,0,0,0,0,0,0,0,Tension-type headache,LOW,0,Routine medical review
+P0420,46,M,vomiting,30 minutes,3,1,0,0,0,0,1,0,1,0,0,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0421,43,F,fever,30 minutes,5,1,0,0,0,0,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0422,39,F,abdominal pain,1 day,6,1,0,0,0,0,0,0,1,0,0,0,0,Urinary tract infection,MODERATE,0,Medical review
+P0423,72,M,cough,1 day,6,0,1,0,1,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0424,37,M,abdominal pain,2 days,8,1,1,0,0,0,1,0,1,0,1,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0425,79,M,headache,2 hours,7,0,0,0,0,1,1,0,0,0,0,0,0,Migraine,MODERATE,0,Medical review
+P0426,71,M,breathing difficulty,1 week,10,0,0,1,0,0,0,0,0,0,1,0,0,Asthma/respiratory exacerbation,HIGH,1,Urgent medical evaluation
+P0427,63,F,headache,1 day,9,0,0,0,0,1,0,0,0,0,1,1,1,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0428,52,M,headache,2 days,4,0,0,0,0,1,0,0,0,0,0,0,0,Tension-type headache,LOW,0,Routine medical review
+P0429,46,M,abdominal pain,2 days,2,0,0,0,0,0,0,0,1,0,1,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0430,63,M,fever,1 week,6,0,0,0,0,1,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0431,25,M,abdominal pain,2 hours,10,0,0,0,0,0,0,0,1,0,1,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0432,58,F,abdominal pain,1 week,7,0,0,0,0,0,0,0,1,0,1,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0433,81,F,cough,2 days,3,0,0,0,0,0,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0434,46,M,headache,2 days,9,0,0,0,0,1,0,0,0,0,1,0,1,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0435,43,M,cough,2 hours,4,0,1,1,0,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0436,36,M,headache,3 days,9,0,0,0,0,1,0,0,0,0,1,0,1,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0437,68,M,cough,3 days,5,1,1,1,0,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0438,73,F,breathing difficulty,3 days,8,0,0,1,1,0,0,0,0,0,0,0,0,Asthma/respiratory exacerbation,HIGH,1,Urgent medical evaluation
+P0439,40,F,abdominal pain,2 hours,4,0,0,0,0,0,0,0,1,0,0,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0440,18,F,abdominal pain,3 days,7,1,0,0,0,0,0,0,1,0,0,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0441,31,F,cough,2 hours,4,0,0,0,0,1,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0442,29,F,chest pain,6 hours,8,0,0,0,1,0,0,0,0,0,0,0,1,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0443,31,M,headache,1 day,5,0,0,0,0,1,0,0,0,0,0,0,0,Tension-type headache,LOW,0,Routine medical review
+P0444,71,M,chest pain,30 minutes,9,0,0,1,1,0,0,0,0,1,1,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0445,79,M,cough,6 hours,2,0,0,0,0,1,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0446,51,M,headache,1 day,7,0,0,0,0,1,0,0,0,0,0,0,0,Migraine,MODERATE,0,Medical review
+P0447,38,M,headache,3 days,8,0,0,0,0,1,0,0,0,0,1,1,1,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0448,21,F,breathing difficulty,30 minutes,7,0,1,1,0,0,0,0,0,0,0,0,0,Asthma/respiratory exacerbation,HIGH,1,Urgent medical evaluation
+P0449,60,M,vomiting,30 minutes,4,1,0,0,0,0,1,1,1,0,0,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0450,68,F,fever,6 hours,2,1,0,0,0,1,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0451,79,M,headache,2 hours,5,0,0,0,0,1,0,0,0,0,0,0,0,Migraine,MODERATE,0,Medical review
+P0452,55,M,chest pain,30 minutes,8,0,0,0,1,0,0,0,0,1,1,1,1,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0453,67,M,cough,30 minutes,7,1,1,1,0,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0454,51,F,chest pain,30 minutes,7,0,0,1,1,0,0,0,0,1,0,0,0,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0455,62,F,abdominal pain,2 days,8,1,0,0,0,0,1,0,1,0,0,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0456,78,M,chest pain,1 week,6,0,0,1,1,0,0,0,0,1,0,0,0,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0457,75,M,fever,30 minutes,5,0,0,0,0,0,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0458,73,M,breathing difficulty,30 minutes,7,0,1,1,1,0,0,0,0,0,0,0,0,Asthma/respiratory exacerbation,HIGH,1,Urgent medical evaluation
+P0459,67,F,headache,1 week,9,0,0,0,0,1,0,0,0,0,1,1,1,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0460,19,F,headache,2 hours,8,0,0,0,0,1,0,0,0,0,0,0,0,Migraine,MODERATE,0,Medical review
+P0461,30,M,abdominal pain,6 hours,7,1,0,0,0,0,1,0,1,0,1,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0462,67,F,abdominal pain,1 day,10,0,0,0,0,0,1,0,1,0,0,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0463,36,F,headache,6 hours,5,0,0,0,0,1,0,0,0,0,0,0,0,Tension-type headache,LOW,0,Routine medical review
+P0464,48,M,abdominal pain,30 minutes,5,1,0,0,0,0,1,0,1,0,0,0,0,Urinary tract infection,MODERATE,0,Medical review
+P0465,61,F,abdominal pain,1 week,4,0,0,0,0,0,0,0,1,0,1,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0466,30,M,cough,2 days,5,1,1,0,0,1,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0467,29,M,chest pain,30 minutes,9,0,0,0,1,0,0,0,0,1,1,0,0,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0468,57,F,headache,1 week,3,0,0,0,0,0,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0469,25,M,headache,30 minutes,5,0,0,0,0,1,0,0,0,0,0,0,0,Tension-type headache,LOW,0,Routine medical review
+P0470,64,M,abdominal pain,2 days,4,0,0,0,0,0,0,0,1,0,1,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0471,68,M,breathing difficulty,2 days,6,0,0,1,1,0,0,0,0,0,1,0,0,Asthma/respiratory exacerbation,HIGH,1,Urgent medical evaluation
+P0472,75,M,chest pain,30 minutes,8,0,0,1,1,0,0,0,0,0,1,0,1,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0473,67,M,headache,6 hours,3,0,0,0,0,0,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0474,70,M,breathing difficulty,2 days,6,0,1,1,0,0,0,0,0,0,0,0,0,Asthma/respiratory exacerbation,HIGH,1,Urgent medical evaluation
+P0475,19,M,abdominal pain,3 days,6,0,0,0,0,0,0,0,1,0,1,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0476,53,F,chest pain,1 day,9,0,0,1,1,0,0,0,0,1,0,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0477,56,F,abdominal pain,6 hours,7,1,0,0,0,0,1,0,1,0,0,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0478,31,F,headache,3 days,7,0,0,0,0,1,1,0,0,0,0,0,0,Migraine,MODERATE,0,Medical review
+P0479,59,F,abdominal pain,2 hours,4,0,0,0,0,0,0,0,1,0,0,0,0,Non-specific abdominal pain,LOW,0,Routine medical review
+P0480,84,M,headache,1 day,6,0,0,0,0,1,0,0,0,0,0,0,0,Tension-type headache,LOW,0,Routine medical review
+P0481,58,M,abdominal pain,6 hours,6,0,0,0,0,0,1,0,1,0,0,0,0,Urinary tract infection,MODERATE,0,Medical review
+P0482,71,F,chest pain,3 days,10,0,0,0,1,0,0,0,0,0,1,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0483,46,F,breathing difficulty,6 hours,8,0,1,1,0,0,0,0,0,0,0,0,0,Asthma/respiratory exacerbation,HIGH,1,Urgent medical evaluation
+P0484,30,F,headache,2 hours,2,1,0,0,0,1,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0485,63,M,abdominal pain,6 hours,6,1,0,0,0,0,1,0,1,0,0,0,0,Urinary tract infection,MODERATE,0,Medical review
+P0486,51,F,chest pain,2 days,9,0,0,0,1,0,0,0,0,0,0,1,0,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation
+P0487,33,F,headache,1 week,9,0,0,0,0,1,0,0,0,0,1,1,0,Potential neurological emergency,EMERGENCY,1,Emergency evaluation
+P0488,37,M,vomiting,1 week,5,0,0,0,0,0,1,1,1,0,0,0,0,Gastrointestinal infection,MODERATE,0,Medical review
+P0489,28,F,cough,1 day,4,0,1,1,0,0,0,0,0,0,0,0,0,Possible pneumonia,HIGH,1,Urgent medical evaluation
+P0490,53,M,headache,2 days,3,0,1,0,0,0,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0491,73,F,chest pain,30 minutes,9,0,0,1,1,0,0,0,0,1,0,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0492,43,F,headache,1 week,4,0,0,0,0,1,0,0,0,0,0,0,0,Tension-type headache,LOW,0,Routine medical review
+P0493,85,M,headache,3 days,2,0,0,0,0,1,0,0,0,0,0,0,0,Tension-type headache,LOW,0,Routine medical review
+P0494,49,M,abdominal pain,30 minutes,5,1,0,0,0,0,0,0,1,0,0,0,0,Urinary tract infection,MODERATE,0,Medical review
+P0495,67,F,fever,3 days,5,0,1,0,0,1,0,0,0,0,0,0,0,Viral illness,LOW,0,Routine medical review
+P0496,84,F,chest pain,1 week,8,0,0,0,1,0,0,0,0,1,1,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0497,42,M,chest pain,2 hours,7,0,0,0,1,0,0,0,0,0,0,0,0,Possible cardiac condition,HIGH,1,Urgent medical evaluation
+P0498,20,M,headache,1 day,7,0,0,0,0,1,0,0,0,0,0,0,0,Migraine,MODERATE,0,Medical review
+P0499,50,M,abdominal pain,3 days,7,0,0,0,0,0,0,0,1,0,0,0,0,Serious abdominal condition,HIGH,1,Urgent medical evaluation
+P0500,32,F,chest pain,3 days,6,0,0,1,1,0,0,0,0,1,1,0,0,Potential cardiac emergency,EMERGENCY,1,Emergency evaluation

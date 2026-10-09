@@ -1,0 +1,6 @@
+{
+  "name": "Aegis Clinical Risk & Recommendation System",
+  "description": "Evidence-based clinical recommendation and risk detection decision support platform with deterministic emergency rules, explainable possible condition identification, doctor override, and audit trail.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

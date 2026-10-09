@@ -1,0 +1,145 @@
+{
+  "complaint": "headache",
+  "title": "Acute & Severe Headache Evaluation",
+  "description": "Evaluation of cephalalgia with screening for secondary life-threatening intracranial emergencies.",
+  "important_information": [
+    "onset",
+    "suddenness",
+    "severity",
+    "character",
+    "neck_stiffness",
+    "fever",
+    "neurological_deficit",
+    "visual_changes",
+    "previous_headache_history"
+  ],
+  "risk_rules": [
+    {
+      "id": "RULE_HEADACHE_THUNDERCLAP_EMERGENCY",
+      "name": "Thunderclap Headache / Subarachnoid Hemorrhage Warning",
+      "risk_level": "EMERGENCY",
+      "requires_doctor_review": true,
+      "recommended_action": "emergency",
+      "reason": "Reported sudden-onset, explosive headache reaching maximum severe intensity within minutes (thunderclap pattern). Consistent with urgent intracranial vascular pathology such as subarachnoid hemorrhage.",
+      "conditions_required": {
+        "has_headache": true,
+        "sudden_onset": true,
+        "high_severity": true
+      },
+      "possible_concern": "Acute intracranial vascular emergency (Subarachnoid hemorrhage concern)",
+      "confidence": "high"
+    },
+    {
+      "id": "RULE_HEADACHE_MENINGEAL_EMERGENCY",
+      "name": "Meningeal Irritation / Intracranial Infection Pattern",
+      "risk_level": "EMERGENCY",
+      "requires_doctor_review": true,
+      "recommended_action": "emergency",
+      "reason": "Headache co-occurring with stiff neck (nuchal rigidity), fever, photophobia, or altered mental clarity. Clinical signs consistent with meningitis or encephalitis.",
+      "conditions_required": {
+        "has_headache": true,
+        "neck_stiffness": true,
+        "fever": true
+      },
+      "possible_concern": "Central nervous system infection (Meningitis/Encephalitis)",
+      "confidence": "high"
+    },
+    {
+      "id": "RULE_HEADACHE_FOCAL_NEURO_HIGH",
+      "name": "Headache with Focal Neurological Deficits",
+      "risk_level": "HIGH",
+      "requires_doctor_review": true,
+      "recommended_action": "urgent_medical_evaluation",
+      "reason": "Headache combined with new weakness, numbness, visual field defects, or confusion warrants urgent neuroimaging.",
+      "conditions_required": {
+        "has_headache": true,
+        "neurological_deficit": true
+      },
+      "possible_concern": "Secondary intracranial lesion or cerebrovascular event",
+      "confidence": "high"
+    },
+    {
+      "id": "RULE_HEADACHE_MIGRAINE_MODERATE",
+      "name": "Probable Migrainous Episode without Red Flags",
+      "risk_level": "MODERATE",
+      "requires_doctor_review": true,
+      "recommended_action": "medical_review",
+      "reason": "Unilateral, pulsating or severe headache associated with nausea, photophobia, or phonophobia, without acute thunderclap onset or focal neurological deficits.",
+      "conditions_required": {
+        "has_headache": true,
+        "character": "throbbing_or_pulsating",
+        "sudden_onset": false
+      },
+      "possible_concern": "Primary headache disorder (Migraine)",
+      "confidence": "moderate"
+    },
+    {
+      "id": "RULE_HEADACHE_TENSION_LOW",
+      "name": "Tension-Type Headache Pattern",
+      "risk_level": "LOW",
+      "requires_doctor_review": false,
+      "recommended_action": "self_care_routine",
+      "reason": "Bilateral, mild-to-moderate band-like tightening headache without fever, nausea, vomiting, sudden onset, or neurological deficits.",
+      "conditions_required": {
+        "has_headache": true,
+        "character": "pressing_tightening",
+        "sudden_onset": false,
+        "severity": "mild_to_moderate"
+      },
+      "possible_concern": "Tension-type headache",
+      "confidence": "moderate"
+    }
+  ],
+  "possible_conditions": [
+    {
+      "name": "Acute intracranial vascular concern",
+      "clinical_category": "Neurological / Emergency",
+      "reason_template": "Sudden peak headache ('worst headache of life') with rapid progression within minutes.",
+      "caveat": "Requires immediate emergency medical evaluation and urgent non-contrast CT head imaging."
+    },
+    {
+      "name": "Migraine",
+      "clinical_category": "Primary Headache Disorder",
+      "reason_template": "Severe unilateral throbbing headache, light or sound sensitivity, nausea, or previous similar episodes.",
+      "caveat": "Clinical decision support only. A medical professional should evaluate you to confirm diagnosis and optimize acute therapy."
+    },
+    {
+      "name": "Tension-type headache",
+      "clinical_category": "Primary Headache Disorder",
+      "reason_template": "Pressure-like or dull ache across forehead or temples, neck muscle tension, absence of systemic red flags.",
+      "caveat": "Routine primary care follow-up is recommended if episodes increase in frequency."
+    }
+  ],
+  "recommended_questions": [
+    {
+      "field": "onset",
+      "priority": 1,
+      "safety_relevance": "Critical safety triage to detect explosive thunderclap onset.",
+      "question": "When did the headache start, and did it reach peak intensity within seconds or minutes?"
+    },
+    {
+      "field": "severity",
+      "priority": 2,
+      "safety_relevance": "Screens for catastrophic 'worst headache of life'.",
+      "question": "On a scale of 1 to 10, how severe is this pain, and is it the most severe headache you have ever experienced?"
+    },
+    {
+      "field": "neck_stiffness",
+      "priority": 3,
+      "safety_relevance": "Screens for nuchal rigidity associated with subarachnoid blood or meningeal infection.",
+      "question": "Do you have stiffness in your neck or difficulty bending your chin to your chest?"
+    },
+    {
+      "field": "fever",
+      "priority": 4,
+      "safety_relevance": "Detects central nervous system or systemic infectious etiology.",
+      "question": "Do you currently have a fever, chills, or body aches?"
+    },
+    {
+      "field": "neurological_deficit",
+      "priority": 5,
+      "safety_relevance": "Identifies acute focal neurological compromise.",
+      "question": "Are you experiencing any weakness on one side of your body, numbness, speech trouble, or vision changes?"
+    }
+  ]
+}

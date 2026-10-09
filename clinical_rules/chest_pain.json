@@ -1,0 +1,155 @@
+{
+  "complaint": "chest_pain",
+  "title": "Acute Chest Pain Evaluation",
+  "description": "Evidence-based triage rules for acute chest discomfort, angina, and life-threatening thoracic emergencies.",
+  "important_information": [
+    "onset",
+    "location",
+    "severity",
+    "character",
+    "radiation",
+    "breathing_difficulty",
+    "sweating",
+    "nausea",
+    "cardiac_history"
+  ],
+  "risk_rules": [
+    {
+      "id": "RULE_CHEST_ACS_EMERGENCY",
+      "name": "Acute Coronary Syndrome / Myocardial Infarction Pattern",
+      "risk_level": "EMERGENCY",
+      "requires_doctor_review": true,
+      "recommended_action": "emergency",
+      "reason": "The patient reported acute chest discomfort accompanied by radiation to the arm/jaw/neck and autonomic symptoms (sweating or shortness of breath). This symptom cluster is consistent with an acute cardiac event.",
+      "conditions_required": {
+        "has_chest_pain": true,
+        "any_radiation": ["left_arm", "arm", "jaw", "neck", "shoulder"],
+        "any_associated": ["sweating", "diaphoresis", "shortness_of_breath", "breathing_difficulty"]
+      },
+      "possible_concern": "Acute cardiac-related condition (e.g. Acute Coronary Syndrome)",
+      "confidence": "high"
+    },
+    {
+      "id": "RULE_CHEST_AORTIC_EMERGENCY",
+      "name": "Acute Aortic Dissection Pattern",
+      "risk_level": "EMERGENCY",
+      "requires_doctor_review": true,
+      "recommended_action": "emergency",
+      "reason": "The patient reported sudden-onset tearing or ripping chest pain radiating through to the back, which is a classic high-alert clinical red flag.",
+      "conditions_required": {
+        "has_chest_pain": true,
+        "character": "tearing_or_ripping",
+        "radiation": "back"
+      },
+      "possible_concern": "Acute thoracic vascular emergency (Aortic dissection)",
+      "confidence": "high"
+    },
+    {
+      "id": "RULE_CHEST_PE_HIGH",
+      "name": "Acute Pleuritic Chest Pain with Dyspnea (Suspected PE)",
+      "risk_level": "HIGH",
+      "requires_doctor_review": true,
+      "recommended_action": "urgent_medical_evaluation",
+      "reason": "Reported chest pain exacerbated by breathing combined with shortness of breath requires urgent exclusion of pulmonary embolism or acute pneumothorax.",
+      "conditions_required": {
+        "has_chest_pain": true,
+        "breathing_difficulty": true
+      },
+      "possible_concern": "Pulmonary embolism or acute pleuro-pulmonary condition",
+      "confidence": "moderate"
+    },
+    {
+      "id": "RULE_CHEST_ISOLATED_MODERATE",
+      "name": "Uncharacterized Chest Discomfort without Emergency Flags",
+      "risk_level": "MODERATE",
+      "requires_doctor_review": true,
+      "recommended_action": "medical_review",
+      "reason": "Patient reports chest discomfort without overt autonomic or radiation red flags; clinical review is indicated to establish etiology.",
+      "conditions_required": {
+        "has_chest_pain": true
+      },
+      "possible_concern": "Undifferentiated chest discomfort (cardiac, esophageal, or musculoskeletal)",
+      "confidence": "moderate"
+    },
+    {
+      "id": "RULE_CHEST_MUSCULOSKELETAL_LOW",
+      "name": "Reproducible Musculoskeletal Chest Wall Pain",
+      "risk_level": "LOW",
+      "requires_doctor_review": false,
+      "recommended_action": "self_care_routine",
+      "reason": "Pain is specifically reproducible by palpation or movement without cardiac risk factors, shortness of breath, or radiation.",
+      "conditions_required": {
+        "has_chest_pain": true,
+        "character": "reproducible_on_palpation",
+        "breathing_difficulty": false,
+        "severity": "mild"
+      },
+      "possible_concern": "Chest wall musculoskeletal tenderness / Costochondritis",
+      "confidence": "moderate"
+    }
+  ],
+  "possible_conditions": [
+    {
+      "name": "Acute cardiac-related condition",
+      "clinical_category": "Cardiovascular",
+      "reason_template": "Reported chest pressure/discomfort with shortness of breath, sweating, or radiation to upper extremities.",
+      "caveat": "These symptoms can occur with serious heart-related conditions and require urgent medical evaluation. This is decision support, not a definitive diagnosis."
+    },
+    {
+      "name": "Pulmonary embolism / Pleuritic disease",
+      "clinical_category": "Respiratory / Vascular",
+      "reason_template": "Sharp or worsening pain with deep inhalation and breathlessness.",
+      "caveat": "Requires clinical examination, oxygen saturation assessment, and imaging if clinically indicated."
+    },
+    {
+      "name": "Gastroesophageal reflux / Esophageal spasm",
+      "clinical_category": "Gastrointestinal",
+      "reason_template": "Burning or substernal discomfort occurring post-prandially or with recumbency.",
+      "caveat": "Cardiac causes must always be ruled out first before attributing symptoms to acid reflux."
+    },
+    {
+      "name": "Chest wall musculoskeletal strain",
+      "clinical_category": "Musculoskeletal",
+      "reason_template": "Localized tenderness aggravated by positional changes, palpation, or twisting.",
+      "caveat": "Diagnosis of exclusion; routine clinical follow-up is advised if symptoms persist."
+    }
+  ],
+  "recommended_questions": [
+    {
+      "field": "onset",
+      "priority": 1,
+      "safety_relevance": "Differentiates sudden vascular catastrophes from gradual or chronic onset.",
+      "question": "When did the chest discomfort start, and did it develop suddenly or build up gradually?"
+    },
+    {
+      "field": "breathing_difficulty",
+      "priority": 2,
+      "safety_relevance": "Critical safety check for hemodynamic and respiratory compromise.",
+      "question": "Are you having difficulty breathing or feeling short of breath?"
+    },
+    {
+      "field": "radiation",
+      "priority": 3,
+      "safety_relevance": "Key hallmark of cardiac ischemia radiating to left arm, neck, shoulder, or jaw.",
+      "question": "Does the discomfort spread or radiate to your arm, shoulder, neck, jaw, or back?"
+    },
+    {
+      "field": "sweating_and_nausea",
+      "priority": 4,
+      "safety_relevance": "Autonomic symptoms indicate severe systemic/cardiac stress.",
+      "question": "Are you experiencing profuse sweating, dizziness, lightheadedness, or nausea?"
+    },
+    {
+      "field": "character",
+      "priority": 5,
+      "safety_relevance": "Distinguishes pressure/heaviness from sharp pleuritic or tearing pain.",
+      "question": "How would you describe the feeling (for example: pressure, squeezing, heaviness, sharp, or tearing)?"
+    },
+    {
+      "field": "severity",
+      "priority": 6,
+      "safety_relevance": "Monitors subjective intensity on a standard 1-10 pain scale.",
+      "question": "On a scale from 1 to 10 (with 10 being the most severe), how intense is the discomfort?"
+    }
+  ]
+}

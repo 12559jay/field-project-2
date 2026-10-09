@@ -1,0 +1,134 @@
+{
+  "complaint": "breathing_problem",
+  "title": "Acute Respiratory Distress Evaluation",
+  "description": "Evaluation of dyspnea, wheezing, and acute hypoxia with immediate emergency stratification.",
+  "important_information": [
+    "onset",
+    "severity",
+    "speech_ability",
+    "stridor_or_wheezing",
+    "cyanosis_or_blueness",
+    "chest_pain",
+    "asthma_copd_history",
+    "allergies_anaphylaxis"
+  ],
+  "risk_rules": [
+    {
+      "id": "RULE_RESP_CRITICAL_DISTRESS_EMERGENCY",
+      "name": "Severe Respiratory Distress / Impending Respiratory Failure",
+      "risk_level": "EMERGENCY",
+      "requires_doctor_review": true,
+      "recommended_action": "emergency",
+      "reason": "Patient is unable to speak in full sentences due to breathlessness, reports bluish discoloration of lips/fingers (cyanosis), or high-pitched stridor indicating upper airway obstruction.",
+      "conditions_required": {
+        "has_breathing_problem": true,
+        "any_critical_flag": ["cannot_speak_sentences", "cyanosis", "stridor", "gasping"]
+      },
+      "possible_concern": "Acute respiratory failure / Critical airway compromise",
+      "confidence": "high"
+    },
+    {
+      "id": "RULE_RESP_ANAPHYLAXIS_EMERGENCY",
+      "name": "Anaphylaxis with Respiratory Involvement",
+      "risk_level": "EMERGENCY",
+      "requires_doctor_review": true,
+      "recommended_action": "emergency",
+      "reason": "Acute shortness of breath developing rapidly after exposure to food/medication/insect sting accompanied by lip/tongue swelling, hives, or throat tightness.",
+      "conditions_required": {
+        "has_breathing_problem": true,
+        "swelling_or_throat_tightness": true
+      },
+      "possible_concern": "Severe systemic allergic reaction (Anaphylaxis)",
+      "confidence": "high"
+    },
+    {
+      "id": "RULE_RESP_ACUTE_ASTHMA_HIGH",
+      "name": "Acute Asthma or COPD Exacerbation",
+      "risk_level": "HIGH",
+      "requires_doctor_review": true,
+      "recommended_action": "urgent_medical_evaluation",
+      "reason": "Audible wheezing, persistent chest tightness, and breathlessness with incomplete relief from rescue inhaler.",
+      "conditions_required": {
+        "has_breathing_problem": true,
+        "wheezing": true
+      },
+      "possible_concern": "Acute broncho-obstructive exacerbation (Asthma/COPD)",
+      "confidence": "high"
+    },
+    {
+      "id": "RULE_RESP_INFECTION_MODERATE",
+      "name": "Productive Cough with Exertional Breathlessness",
+      "risk_level": "MODERATE",
+      "requires_doctor_review": true,
+      "recommended_action": "medical_review",
+      "reason": "Shortness of breath accompanied by fever, productive cough with colored phlegm, or pleuritic chest discomfort.",
+      "conditions_required": {
+        "has_breathing_problem": true,
+        "fever_or_productive_cough": true
+      },
+      "possible_concern": "Lower respiratory tract infection (Bronchitis or Pneumonia)",
+      "confidence": "moderate"
+    },
+    {
+      "id": "RULE_RESP_MILD_COLD_LOW",
+      "name": "Mild Upper Airway Congestion",
+      "risk_level": "LOW",
+      "requires_doctor_review": false,
+      "recommended_action": "self_care_routine",
+      "reason": "Mild breathlessness attributed to nasal congestion or seasonal rhinitis without wheezing, chest pain, or exertion limitation.",
+      "conditions_required": {
+        "has_breathing_problem": true,
+        "severity": "mild",
+        "only_nasal_congestion": true
+      },
+      "possible_concern": "Upper respiratory viral illness / Allergic rhinitis",
+      "confidence": "moderate"
+    }
+  ],
+  "possible_conditions": [
+    {
+      "name": "Acute respiratory compromise / Severe asthma",
+      "clinical_category": "Pulmonary Emergency",
+      "reason_template": "Severe shortness of breath, wheezing, or difficulty completing sentences.",
+      "caveat": "Immediate evaluation and objective pulse oximetry / nebulizer therapy required."
+    },
+    {
+      "name": "Lower respiratory tract infection / Pneumonia",
+      "clinical_category": "Infectious Pulmonary",
+      "reason_template": "Breathlessness coupled with fever, chills, and purulent sputum or localized crackles.",
+      "caveat": "Physician evaluation recommended for auscultation and chest radiography."
+    },
+    {
+      "name": "Pulmonary embolism",
+      "clinical_category": "Cardiovascular / Pulmonary",
+      "reason_template": "Sudden onset of dyspnea, tachycardia, or unilateral pleuritic pain.",
+      "caveat": "Requires clinical evaluation and D-dimer / CT pulmonary angiography if risk criteria met."
+    }
+  ],
+  "recommended_questions": [
+    {
+      "field": "speech_ability",
+      "priority": 1,
+      "safety_relevance": "Most immediate bedside triage indicator of critical respiratory reserve.",
+      "question": "Can you speak a full sentence comfortably without having to stop for air?"
+    },
+    {
+      "field": "blueness_and_stridor",
+      "priority": 2,
+      "safety_relevance": "Identifies dangerous hypoxemia or upper airway stridor.",
+      "question": "Are your lips, face, or fingernails turning blue or pale, or are you making a high-pitched squeaking noise when breathing in?"
+    },
+    {
+      "field": "allergic_symptoms",
+      "priority": 3,
+      "safety_relevance": "Screens for life-threatening anaphylactic airway compromise.",
+      "question": "Do you notice any swelling of your lips, tongue, or throat, or any sudden itching and hives?"
+    },
+    {
+      "field": "chest_pain",
+      "priority": 4,
+      "safety_relevance": "Differentiates primary lung disease from cardiopulmonary emergencies (PE, pneumothorax, ACS).",
+      "question": "Are you also experiencing chest pain, tightness, or a racing heartbeat?"
+    }
+  ]
+}

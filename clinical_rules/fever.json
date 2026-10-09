@@ -1,0 +1,134 @@
+{
+  "complaint": "fever",
+  "title": "Febrile Illness & Sepsis Screening",
+  "description": "Evaluation of fever and inflammatory signs with explicit screening for sepsis, meningitis, and shock.",
+  "important_information": [
+    "temperature",
+    "duration_days",
+    "stiff_neck",
+    "petechial_rash",
+    "altered_mental_state",
+    "shortness_of_breath",
+    "urinary_symptoms",
+    "immunocompromised_status"
+  ],
+  "risk_rules": [
+    {
+      "id": "RULE_FEVER_SEPSIS_PURPURA_EMERGENCY",
+      "name": "Suspected Sepsis / Meningococcal Purpura Emergency",
+      "risk_level": "EMERGENCY",
+      "requires_doctor_review": true,
+      "recommended_action": "emergency",
+      "reason": "Fever associated with a non-blanching dark purple/red petechial rash, acute disorientation/confusion, or lethargy. Consistent with fulminant sepsis or meningococcemia.",
+      "conditions_required": {
+        "has_fever": true,
+        "any_sepsis_flag": ["petechial_rash", "confusion_or_disorientation", "extreme_lethargy", "unresponsive"]
+      },
+      "possible_concern": "Severe sepsis / Meningococcemia / Septic shock",
+      "confidence": "high"
+    },
+    {
+      "id": "RULE_FEVER_MENINGISM_EMERGENCY",
+      "name": "Fever with Nuchal Rigidity (Meningitis Pattern)",
+      "risk_level": "EMERGENCY",
+      "requires_doctor_review": true,
+      "recommended_action": "emergency",
+      "reason": "High fever combined with severe neck stiffness and photophobia, indicating meningeal irritation.",
+      "conditions_required": {
+        "has_fever": true,
+        "stiff_neck": true
+      },
+      "possible_concern": "Central nervous system infection (Bacterial/Viral Meningitis)",
+      "confidence": "high"
+    },
+    {
+      "id": "RULE_FEVER_PERSISTENT_HIGH_RISK",
+      "name": "Prolonged High Fever or High-Risk Host",
+      "risk_level": "HIGH",
+      "requires_doctor_review": true,
+      "recommended_action": "urgent_medical_evaluation",
+      "reason": "Temperature exceeding 39.5°C (103°F) or fever persisting beyond 5 days with marked prostration or in an immunocompromised individual.",
+      "conditions_required": {
+        "has_fever": true,
+        "duration_exceeds_5_days_or_high_temp": true
+      },
+      "possible_concern": "Complicated bacterial infection / Occult bacteremia",
+      "confidence": "moderate"
+    },
+    {
+      "id": "RULE_FEVER_LOCALIZED_MODERATE",
+      "name": "Febrile Syndrome with Focal Organ Symptoms",
+      "risk_level": "MODERATE",
+      "requires_doctor_review": true,
+      "recommended_action": "medical_review",
+      "reason": "Fever presenting with localized symptoms such as burning urination (dysuria), unilateral earache, or sinus pain requiring clinical assessment.",
+      "conditions_required": {
+        "has_fever": true,
+        "localized_organ_symptoms": true
+      },
+      "possible_concern": "Focal bacterial infection (e.g. Pyelonephritis, Sinusitis, Otitis)",
+      "confidence": "moderate"
+    },
+    {
+      "id": "RULE_FEVER_VIRAL_LOW",
+      "name": "Short-Duration Low-Grade Febrile Viral Illness",
+      "risk_level": "LOW",
+      "requires_doctor_review": false,
+      "recommended_action": "self_care_routine",
+      "reason": "Low-grade temperature (<38.5°C) lasting less than 48 hours, clear sensorium, good fluid intake, and mild upper respiratory symptoms.",
+      "conditions_required": {
+        "has_fever": true,
+        "duration_under_48h": true,
+        "no_alarm_signs": true
+      },
+      "possible_concern": "Uncomplicated self-limiting viral illness",
+      "confidence": "moderate"
+    }
+  ],
+  "possible_conditions": [
+    {
+      "name": "Severe systemic infection / Sepsis",
+      "clinical_category": "Infectious Emergency",
+      "reason_template": "High fever accompanied by confusion, purpuric spots, rapid breathing, or poor perfusion.",
+      "caveat": "Decision support alert. Immediate emergency department evaluation and blood cultures/antibiotics are vital."
+    },
+    {
+      "name": "Acute bacterial infection",
+      "clinical_category": "Infectious Disease",
+      "reason_template": "Persistent elevated temperature with localized focal symptoms (urinary, pulmonary, or ENT).",
+      "caveat": "Clinical examination and targeted lab testing needed to determine if antimicrobial therapy is indicated."
+    },
+    {
+      "name": "Self-limiting viral syndrome",
+      "clinical_category": "Viral Illness",
+      "reason_template": "Mild fever with diffuse myalgias, coryza, and preserved general clinical status.",
+      "caveat": "Supportive hydration and rest advised; seek review if fever persists > 3 days or red flags emerge."
+    }
+  ],
+  "recommended_questions": [
+    {
+      "field": "rash_and_sensorium",
+      "priority": 1,
+      "safety_relevance": "Direct screening for life-threatening sepsis and purpura fulminans.",
+      "question": "Do you have any new dark red or purple spots on your skin that do not fade when pressed, or any confusion?"
+    },
+    {
+      "field": "stiff_neck",
+      "priority": 2,
+      "safety_relevance": "Screens for acute bacterial or viral meningitis.",
+      "question": "Does your neck feel unusually stiff, or does it hurt when you try to tuck your chin to your chest?"
+    },
+    {
+      "field": "temperature_and_duration",
+      "priority": 3,
+      "safety_relevance": "Measures physiological severity and chronological trajectory.",
+      "question": "What was the highest temperature measured, and how many days has the fever been present?"
+    },
+    {
+      "field": "associated_foci",
+      "priority": 4,
+      "safety_relevance": "Isolates the anatomical source of infection.",
+      "question": "Are you experiencing pain when urinating, severe back pain, or a productive cough?"
+    }
+  ]
+}

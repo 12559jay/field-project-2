@@ -1,0 +1,208 @@
+{
+  "trainedOn": "500_patient_clinical_cohort_enriched_intake_data",
+  "totalSamples": 500,
+  "trainSamples": 500,
+  "trainedAt": "2026-10-08T15:13:20.293Z",
+  "bias": -1.86,
+  "weights": {
+    "sudden_onset": 0.1287741226674941,
+    "severity_high": 2.824042392657948,
+    "radiation_arm_jaw": -1.2518184227891573,
+    "breathing_difficulty": 0.33488912015389993,
+    "sweating_diaphoresis": 1.8214003539236738,
+    "stiff_neck": 0.00009634721735570981,
+    "fast_stroke_signs": 0.8515290901679001,
+    "cyanosis_stridor": 0.9585859717939198,
+    "rigid_abdomen": 0.00010460555027191101,
+    "petechial_rash": 0.00011011110554938162,
+    "chest_discomfort": 0.18876639090210323,
+    "fever_high": 0.000052302775135955505,
+    "right_lower_abdomen": 0.0000715722186070964,
+    "age_geriatric": -0.299321405669975,
+    "age_pediatric": 0.00003716249812291653,
+    "sex_female_atypical": 0.46040705505193197,
+    "cardio_comorbidity": 0.07919900836167347,
+    "diabetes_comorbidity": 0.06224485783061091,
+    "respiratory_comorbidity": 0.55084020829919,
+    "high_bmi_obesity": 0.0943005751959926,
+    "anticoagulant_risk": 0.06763303897005216,
+    "pregnancy_risk": -0.044609227514162506,
+    "smoker_risk": -0.08105368910005548,
+    "allergy_contraindication": -0.04156824638159931,
+    "cardiac_comorbidity_synergy": 0.13559100076296146,
+    "anticoagulant_neuro_synergy": 0.06764955563588546,
+    "respiratory_comorbidity_synergy": 0.15110022260009123,
+    "pregnancy_obstetric_synergy": -0.044587205293052636
+  },
+  "thresholds": {
+    "emergencyThreshold": 0.72,
+    "highThreshold": 0.48,
+    "moderateThreshold": 0.25
+  },
+  "fullMetrics": {
+    "sensitivity": 96.1,
+    "specificity": 89.3,
+    "accuracy": 58.6,
+    "finalLoss": 0.04
+  },
+  "featureImportance": [
+    {
+      "feature": "severity_high",
+      "weight": 2.82,
+      "impact": "increases_risk"
+    },
+    {
+      "feature": "sweating_diaphoresis",
+      "weight": 1.82,
+      "impact": "increases_risk"
+    },
+    {
+      "feature": "radiation_arm_jaw",
+      "weight": -1.25,
+      "impact": "decreases_risk"
+    },
+    {
+      "feature": "cyanosis_stridor",
+      "weight": 0.96,
+      "impact": "increases_risk"
+    },
+    {
+      "feature": "fast_stroke_signs",
+      "weight": 0.85,
+      "impact": "increases_risk"
+    },
+    {
+      "feature": "respiratory_comorbidity",
+      "weight": 0.55,
+      "impact": "increases_risk"
+    },
+    {
+      "feature": "sex_female_atypical",
+      "weight": 0.46,
+      "impact": "increases_risk"
+    },
+    {
+      "feature": "breathing_difficulty",
+      "weight": 0.33,
+      "impact": "increases_risk"
+    },
+    {
+      "feature": "age_geriatric",
+      "weight": -0.3,
+      "impact": "decreases_risk"
+    },
+    {
+      "feature": "chest_discomfort",
+      "weight": 0.19,
+      "impact": "increases_risk"
+    },
+    {
+      "feature": "respiratory_comorbidity_synergy",
+      "weight": 0.15,
+      "impact": "increases_risk"
+    },
+    {
+      "feature": "cardiac_comorbidity_synergy",
+      "weight": 0.14,
+      "impact": "increases_risk"
+    },
+    {
+      "feature": "sudden_onset",
+      "weight": 0.13,
+      "impact": "increases_risk"
+    },
+    {
+      "feature": "high_bmi_obesity",
+      "weight": 0.09,
+      "impact": "increases_risk"
+    },
+    {
+      "feature": "cardio_comorbidity",
+      "weight": 0.08,
+      "impact": "increases_risk"
+    },
+    {
+      "feature": "smoker_risk",
+      "weight": -0.08,
+      "impact": "decreases_risk"
+    },
+    {
+      "feature": "anticoagulant_risk",
+      "weight": 0.07,
+      "impact": "increases_risk"
+    },
+    {
+      "feature": "anticoagulant_neuro_synergy",
+      "weight": 0.07,
+      "impact": "increases_risk"
+    },
+    {
+      "feature": "diabetes_comorbidity",
+      "weight": 0.06,
+      "impact": "increases_risk"
+    },
+    {
+      "feature": "pregnancy_risk",
+      "weight": -0.04,
+      "impact": "decreases_risk"
+    },
+    {
+      "feature": "allergy_contraindication",
+      "weight": -0.04,
+      "impact": "decreases_risk"
+    },
+    {
+      "feature": "pregnancy_obstetric_synergy",
+      "weight": -0.04,
+      "impact": "decreases_risk"
+    },
+    {
+      "feature": "stiff_neck",
+      "weight": 0,
+      "impact": "increases_risk"
+    },
+    {
+      "feature": "rigid_abdomen",
+      "weight": 0,
+      "impact": "increases_risk"
+    },
+    {
+      "feature": "petechial_rash",
+      "weight": 0,
+      "impact": "increases_risk"
+    },
+    {
+      "feature": "fever_high",
+      "weight": 0,
+      "impact": "increases_risk"
+    },
+    {
+      "feature": "right_lower_abdomen",
+      "weight": 0,
+      "impact": "increases_risk"
+    },
+    {
+      "feature": "age_pediatric",
+      "weight": 0,
+      "impact": "increases_risk"
+    }
+  ],
+  "confusionMatrix": {
+    "trueEmergency": {
+      "predEmergency": 92,
+      "predOther": 0
+    },
+    "trueHigh": {
+      "predHigh": 156,
+      "predOther": 10
+    },
+    "trueModerate": {
+      "predModerate": 87,
+      "predOther": 28
+    },
+    "trueLow": {
+      "predLow": 33,
+      "predOther": 94
+    }
+  }
+}

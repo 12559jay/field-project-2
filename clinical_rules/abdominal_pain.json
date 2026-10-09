@@ -1,0 +1,138 @@
+{
+  "complaint": "abdominal_pain",
+  "title": "Acute Abdominal Pain Evaluation",
+  "description": "Evaluation of acute abdominal symptoms with targeted screening for surgical emergencies and peritonitis.",
+  "important_information": [
+    "onset",
+    "location",
+    "severity",
+    "character",
+    "rebound_tenderness",
+    "fever",
+    "vomiting",
+    "gastrointestinal_bleeding",
+    "pregnancy_possibility"
+  ],
+  "risk_rules": [
+    {
+      "id": "RULE_ABDOMEN_ACUTE_SURGICAL_EMERGENCY",
+      "name": "Acute Peritoneal / Rigid Abdomen Emergency",
+      "risk_level": "EMERGENCY",
+      "requires_doctor_review": true,
+      "recommended_action": "emergency",
+      "reason": "Severe abdominal pain accompanied by board-like abdominal rigidity, continuous vomiting, hematemesis, or hemodynamic instability (dizziness, fainting).",
+      "conditions_required": {
+        "has_abdominal_pain": true,
+        "rigid_abdomen_or_fainting": true,
+        "high_severity": true
+      },
+      "possible_concern": "Acute surgical abdomen / Viscus perforation / Severe peritonitis",
+      "confidence": "high"
+    },
+    {
+      "id": "RULE_ABDOMEN_APPENDICITIS_HIGH",
+      "name": "Right Lower Quadrant Appendicitis Pattern",
+      "risk_level": "HIGH",
+      "requires_doctor_review": true,
+      "recommended_action": "urgent_medical_evaluation",
+      "reason": "Pain migrating from periumbilical region to the right lower quadrant, accompanied by fever, anorexia, or worsening with movement.",
+      "conditions_required": {
+        "has_abdominal_pain": true,
+        "location": "right_lower_quadrant",
+        "fever_or_nausea": true
+      },
+      "possible_concern": "Acute appendicitis",
+      "confidence": "high"
+    },
+    {
+      "id": "RULE_ABDOMEN_CHOLECYSTITIS_HIGH",
+      "name": "Right Upper Quadrant / Biliary Colic Pattern",
+      "risk_level": "HIGH",
+      "requires_doctor_review": true,
+      "recommended_action": "urgent_medical_evaluation",
+      "reason": "Right upper quadrant pain radiating to the right shoulder/scapula, frequently triggered post-prandially by fatty food, accompanied by fever or nausea.",
+      "conditions_required": {
+        "has_abdominal_pain": true,
+        "location": "right_upper_quadrant",
+        "fever_or_nausea": true
+      },
+      "possible_concern": "Acute cholecystitis / Biliary pathology",
+      "confidence": "moderate"
+    },
+    {
+      "id": "RULE_ABDOMEN_GASTROENTERITIS_MODERATE",
+      "name": "Crampy Generalized Abdominal Pain with Diarrhea",
+      "risk_level": "MODERATE",
+      "requires_doctor_review": true,
+      "recommended_action": "medical_review",
+      "reason": "Diffuse diffuse crampy pain associated with nausea, vomiting, or diarrhea without focal localization or peritoneal signs.",
+      "conditions_required": {
+        "has_abdominal_pain": true,
+        "has_vomiting_or_diarrhea": true
+      },
+      "possible_concern": "Acute gastroenteritis / Enteric infection",
+      "confidence": "moderate"
+    },
+    {
+      "id": "RULE_ABDOMEN_DYSPEPSIA_LOW",
+      "name": "Mild Epigastric Dyspepsia without Alarming Features",
+      "risk_level": "LOW",
+      "requires_doctor_review": false,
+      "recommended_action": "self_care_routine",
+      "reason": "Mild burning or discomfort in upper abdomen related to meals, without weight loss, black stools, vomiting, or progressive severe pain.",
+      "conditions_required": {
+        "has_abdominal_pain": true,
+        "severity": "mild",
+        "no_alarm_signs": true
+      },
+      "possible_concern": "Functional dyspepsia / Mild gastritis",
+      "confidence": "moderate"
+    }
+  ],
+  "possible_conditions": [
+    {
+      "name": "Acute appendicitis",
+      "clinical_category": "Surgical / Gastrointestinal",
+      "reason_template": "Right lower quadrant abdominal pain, nausea/vomiting, fever, or movement aggravation.",
+      "caveat": "Decision support only. Requires physical examination, lab work (CBC/CRP), and urgent ultrasound or CT scan."
+    },
+    {
+      "name": "Acute cholecystitis",
+      "clinical_category": "Hepatobiliary",
+      "reason_template": "Right upper quadrant pain with radiation to right back/shoulder and fever or nausea.",
+      "caveat": "Requires clinical examination and urgent biliary ultrasound."
+    },
+    {
+      "name": "Acute gastroenteritis",
+      "clinical_category": "Infectious / Gastrointestinal",
+      "reason_template": "Cramping abdominal discomfort with watery diarrhea, nausea, and low-grade systemic symptoms.",
+      "caveat": "Monitor hydration status; medical review required if unable to keep fluids down."
+    }
+  ],
+  "recommended_questions": [
+    {
+      "field": "location",
+      "priority": 1,
+      "safety_relevance": "Pinpoints anatomical quadrant to isolate appendiceal, biliary, or vascular danger zones.",
+      "question": "Where exactly is the pain located in your belly (for example: lower right side, upper right side, or all over)?"
+    },
+    {
+      "field": "severity_and_rigidity",
+      "priority": 2,
+      "safety_relevance": "Evaluates potential peritonitis and surgical abdomen.",
+      "question": "On a scale of 1 to 10, how severe is the pain, and does your belly feel rigid, hard, or hurts when touched?"
+    },
+    {
+      "field": "fever_and_vomiting",
+      "priority": 3,
+      "safety_relevance": "Checks for inflammatory and obstructive pathology.",
+      "question": "Do you have a fever, repeated vomiting, or are you unable to hold down fluids?"
+    },
+    {
+      "field": "bleeding_signs",
+      "priority": 4,
+      "safety_relevance": "Screens for critical gastrointestinal hemorrhage.",
+      "question": "Have you noticed any vomiting of blood, coffee-ground material, or dark black tarry stools?"
+    }
+  ]
+}
